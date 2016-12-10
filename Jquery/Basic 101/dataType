@@ -1,0 +1,138 @@
+1. String
+'this is javascript string'
+"this is also a javascript string"
+'this is "also" a javascript string'
+"this is 'also' javascript string"
+----------------------------------------------------------------------------------------------------------
+2. Number(double-precision 64 bit)
+3434
+43.43
+0.232
+----------------------------------------------------------------------------------------------------------
+3. Boolean
+true
+false
+0 //false
+1 //true
+"" //   false
+"hello" //true
+----------------------------------------------------------------------------------------------------------
+4. Object
+var emp = {name:"rishabh",age:23}
+get emp.name // rishabh
+set emp.name = "agrawal"
+----------------------------------------------------------------------------------------------------------
+5. Array
+var x = []
+var y = [1,2,2,4,45,5]
+y.length // 6
+----------------------------------------------------------------------------------------------------------
+6. Functions
+a function in javascript can be named or anonymous
+function named() {
+//write some stuff
+}
+var anonymous = function() {
+//write you anonymous function stuff here
+}
+
+Jquery make use of anonymous function very frequently like this
+$(document).ready(function(){
+//this is anonymous Jquery funtion
+})
+----------------------------------------------------------------------------------------------------------
+7. Arguments typeof == Object
+ length property
+ callee property
+
+arg(1,'w',"e",1.2)
+function arg(){
+console.log("arg method is here")
+console.log(arguments)
+}
+output
+{ '0': 1, '1': 'w', '2': 'e', '3': 1.2 }
+typeof arguments[0] //number
+typeof arguments[1] //string
+
+ func()
+ func(1)
+func(1,2)
+
+----------------------------------------------------------------------------------------------------------
+8. Context
+javascript famous keyword always refers to the current Context
+NOTE: within a function this Context can be changed depending on how the function is called
+$(document).ready(function(){
+//here this refers to the window.document
+)
+
+$('div).click(function(){
+//here this refers to the DIV dom element :)
+)
+
+you can specify the Context for a function call using build-in call() apply() method.
+the different between them is how they passed the argument 
+call passes all the argument
+----------------------------------------------------------------------------------------------------------
+9. Scope
+Gloabal Scope:global
+Local Scope:within function
+var global = "rishabh"
+function arg(){
+    console.log(global) //rishabh   
+    var local ="good"
+}
+arg()
+console.log(local) //local is not defined   
+----------------------------------------------------------------------------------------------------------
+10. Callback
+same as in JS
+----------------------------------------------------------------------------------------------------------
+11. Closure
+Closure are created whenever a variable that is defined outside the current scope is 
+accessed from within some inner scope
+function create() {
+ var counter = 0
+ return {
+    increment:function() {
+        counter++
+    },
+    print:function() {
+        console.log(counter)
+    }
+ }
+}
+var c = create()
+c.increment()
+c.print() //1 
+this is the basic data  hiding
+----------------------------------------------------------------------------------------------------------
+12. Proxy Pattern
+A proxy is an Object that can be used to control another Object 
+it implements the same interface as this other Object
+this other Object is often called Real subject
+
+-> in doubt phase
+----------------------------------------------------------------------------------------------------------
+13. Build-in function
+javascript come of bunch of build-in method below are some method which are used to manipulate 
+Strings,Numbers,Dates
+chatAt()
+concat()
+forEach()
+indexOf()//returns the first occurence -1 if not found
+length()
+pop() return the last element from array and return that element
+push() add one or more element to the end of an array and return the new length of an array
+reverse() reverse the order of elements of an array first become last and last become first
+sort() sort element of an array can sort string as well :P
+subStr() 
+toLowerCase()
+toUpperCase()
+toString() return a string representation if a number value
+
+
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------

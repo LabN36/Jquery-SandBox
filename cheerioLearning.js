@@ -7,4 +7,14 @@
 Loadind
 $ = cheerio.load('put your html code here')
 cheerio('ui','put your hmtl code here')//passing the string as a context
-Selector 
+Selectors
+
+Attributes
+Forms
+Traversing
+Manipulation
+Redering
+Miscellaneous
+Utilities
+PLugins
+

@@ -1,0 +1,28 @@
+<!--where to write script code body or head-->
+<!--the problem og writing script in head is blocking!! :P the brower must stop processing the page untill the script is 
+downloaded, parsed, executed
+
+place library script such as jquery at the head
+place normal scrit in head unless it become performance issue/page load issue
+place script that implace the render of the page at the end of body means before ending body tag-->
+
+<!--Doubts
+what is document here that we are passing in $-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World Jqery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function(){
+            //now the document is ready so play with it 
+        })
+    </script>
+</head>
+<body>
+    <div id='mydiv'>
+        click on this to see the dialog
+    </div>
+</body>
+</html>
